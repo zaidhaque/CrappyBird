@@ -21,6 +21,11 @@
 		6589D1921C9B69FA008D291D /* topPipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 6589D18D1C9B69FA008D291D /* topPipe.png */; };
 		68732EB21C9B80E1005FFA7D /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 68732EB01C9B80E1005FFA7D /* MyParticle.sks */; };
 		68732EB31C9B80E1005FFA7D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 68732EB11C9B80E1005FFA7D /* spark.png */; };
+		68732EB91C9B84DF005FFA7D /* tile_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 68732EB41C9B84DF005FFA7D /* tile_0.png */; };
+		68732EBA1C9B84DF005FFA7D /* tile_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 68732EB51C9B84DF005FFA7D /* tile_1.png */; };
+		68732EBB1C9B84DF005FFA7D /* tile_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68732EB61C9B84DF005FFA7D /* tile_2.png */; };
+		68732EBC1C9B84DF005FFA7D /* tile_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 68732EB71C9B84DF005FFA7D /* tile_3.png */; };
+		68732EBD1C9B84DF005FFA7D /* tile_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 68732EB81C9B84DF005FFA7D /* tile_4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		6589D18D1C9B69FA008D291D /* topPipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topPipe.png; sourceTree = "<group>"; };
 		68732EB01C9B80E1005FFA7D /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		68732EB11C9B80E1005FFA7D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		68732EB41C9B84DF005FFA7D /* tile_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_0.png; path = ../../../../../../../Downloads/explosion.atlas/tile_0.png; sourceTree = "<group>"; };
+		68732EB51C9B84DF005FFA7D /* tile_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_1.png; path = ../../../../../../../Downloads/explosion.atlas/tile_1.png; sourceTree = "<group>"; };
+		68732EB61C9B84DF005FFA7D /* tile_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_2.png; path = ../../../../../../../Downloads/explosion.atlas/tile_2.png; sourceTree = "<group>"; };
+		68732EB71C9B84DF005FFA7D /* tile_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_3.png; path = ../../../../../../../Downloads/explosion.atlas/tile_3.png; sourceTree = "<group>"; };
+		68732EB81C9B84DF005FFA7D /* tile_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tile_4.png; path = ../../../../../../../Downloads/explosion.atlas/tile_4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,11 @@
 				6589D18B1C9B69FA008D291D /* floor.png */,
 				6589D18C1C9B69FA008D291D /* player.atlas */,
 				6589D18D1C9B69FA008D291D /* topPipe.png */,
+				68732EB41C9B84DF005FFA7D /* tile_0.png */,
+				68732EB51C9B84DF005FFA7D /* tile_1.png */,
+				68732EB61C9B84DF005FFA7D /* tile_2.png */,
+				68732EB71C9B84DF005FFA7D /* tile_3.png */,
+				68732EB81C9B84DF005FFA7D /* tile_4.png */,
 			);
 			path = CrappyBirds;
 			sourceTree = "<group>";
@@ -150,16 +165,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68732EBB1C9B84DF005FFA7D /* tile_2.png in Resources */,
 				68732EB31C9B80E1005FFA7D /* spark.png in Resources */,
 				6589D1761C9B6822008D291D /* GameScene.sks in Resources */,
+				68732EB91C9B84DF005FFA7D /* tile_0.png in Resources */,
+				68732EBA1C9B84DF005FFA7D /* tile_1.png in Resources */,
 				6589D1901C9B69FA008D291D /* floor.png in Resources */,
 				6589D18E1C9B69FA008D291D /* background.png in Resources */,
 				6589D18F1C9B69FA008D291D /* bottomPipe.png in Resources */,
+				68732EBC1C9B84DF005FFA7D /* tile_3.png in Resources */,
 				6589D1921C9B69FA008D291D /* topPipe.png in Resources */,
 				6589D1911C9B69FA008D291D /* player.atlas in Resources */,
 				6589D1821C9B6822008D291D /* LaunchScreen.storyboard in Resources */,
 				6589D17F1C9B6822008D291D /* Assets.xcassets in Resources */,
 				6589D17D1C9B6822008D291D /* Main.storyboard in Resources */,
+				68732EBD1C9B84DF005FFA7D /* tile_4.png in Resources */,
 				68732EB21C9B80E1005FFA7D /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

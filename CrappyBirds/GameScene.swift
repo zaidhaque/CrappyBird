@@ -20,6 +20,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var floors = [SKSpriteNode]()
     var pipes = [SKSpriteNode]()
     
+    var explosion : SKSpriteNode!
+    var explosionTextureAtlas = SKTextureAtlas(named: "explosion.atlas")
+    var explosionTextures = [SKTexture]()
+    
     var topPipeY = CGFloat(0)
     var bottomPipeY = CGFloat(0)
     
@@ -68,9 +72,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let particlesPath = NSBundle.mainBundle().pathForResource("MyParticle", ofType: "sks")!
         
         let particles = NSKeyedUnarchiver.unarchiveObjectWithFile(particlesPath) as! SKEmitterNode!
+        bird.addChild(particles)
+
         
         addChild(bird)
         
+        // Bird Explosion
+        for texFName in explosionTextureAtlas.textureNames.sort() {
+            explosionTextures.append(explosionTextureAtlas.textureNamed(texFName))
+        }
         
         // Floor
         for i in 0 ..< 2 {
@@ -160,6 +170,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func didBeginContact(contact: SKPhysicsContact) {
         print("collision happened")
+        
+        let explosion = SKAction.animateWithTextures(explosionTextures, timePerFrame: 0.1)
+        let rmParent = SKAction.removeFromParent()
+        let actionSeq = [explosion, rmParent]
+        bird.runAction(SKAction.sequence(actionSeq))
+
     }
    
 }
